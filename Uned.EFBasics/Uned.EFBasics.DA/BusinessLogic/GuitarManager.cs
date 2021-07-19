@@ -7,7 +7,7 @@ namespace Uned.EFBasics.BusinessLogic
 {
     public class GuitarManager
     {
-        private GuitarDataAccess DataAccess { get; set; }
+        private GuitarRepository DataAccess { get; set; }
 
         public void AddGuitar(Guitar guitar)
         {
@@ -38,7 +38,7 @@ namespace Uned.EFBasics.BusinessLogic
 
         public GuitarManager()
         {
-            DataAccess = new GuitarDataAccess();
+            DataAccess = new GuitarRepository();
         }
     }
 }

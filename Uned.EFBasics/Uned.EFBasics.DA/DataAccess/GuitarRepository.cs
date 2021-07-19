@@ -6,7 +6,7 @@ using Uned.EFBasics.Model;
 
 namespace Uned.EFBasics.DataAccess
 {
-    public class GuitarDataAccess
+    public class GuitarRepository
     {
         public void AddGuitar(Guitar guitar)
         {
