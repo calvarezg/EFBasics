@@ -2,11 +2,6 @@
 GO
 /****** Object:  Database [MusicStore]    Script Date: 7/19/2021 6:21:05 AM ******/
 CREATE DATABASE [MusicStore]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'MusicStore', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.LOCAL2016\MSSQL\DATA\MusicStore.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'MusicStore_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.LOCAL2016\MSSQL\DATA\MusicStore_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
 GO
 ALTER DATABASE [MusicStore] SET COMPATIBILITY_LEVEL = 130
 GO
