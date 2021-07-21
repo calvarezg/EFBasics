@@ -7,11 +7,9 @@ namespace Uned.EFBasics.DataAccess
     {
         public DbSet<Guitar> Guitars { get; set; }
         public DbSet<GuitarHistory> GuitarHistory { get; set; }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=;Database=; User Id=; Password=;");
-
         }
     }
 }

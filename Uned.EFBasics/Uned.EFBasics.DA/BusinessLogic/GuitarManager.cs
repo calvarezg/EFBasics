@@ -33,8 +33,8 @@ namespace Uned.EFBasics.BusinessLogic
             return DataAccess.GetGuitarIncludingLog(id);
         }
 
-        public List<Guitar> GetGuitarByCreatedBefore(DateTime date)
-            => DataAccess.GetGuitarByCreatedBefore(date);
+        public List<Guitar> GetGuitarsCreatedBefore(DateTime date)
+            => DataAccess.GetGuitarsCreatedBefore(date);
 
         public GuitarManager()
         {

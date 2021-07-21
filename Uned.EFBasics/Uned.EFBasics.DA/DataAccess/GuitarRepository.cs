@@ -12,7 +12,7 @@ namespace Uned.EFBasics.DataAccess
         {
             using (var context = new MusicStoreContext())
             {
-                context.Guitars.Add(guitar);
+                context.Guitars.Add(guitar);                
                 context.SaveChanges();
             }
         }
@@ -30,7 +30,7 @@ namespace Uned.EFBasics.DataAccess
                 return GetByIdIncludingLog(id, context);
             }
         }
-        public List<Guitar> GetGuitarByCreatedBefore(DateTime date)
+        public List<Guitar> GetGuitarsCreatedBefore(DateTime date)
         {
             using (var context = new MusicStoreContext())
             {
@@ -78,4 +78,5 @@ namespace Uned.EFBasics.DataAccess
             return query.FirstOrDefault();
         }
     }
+
 }

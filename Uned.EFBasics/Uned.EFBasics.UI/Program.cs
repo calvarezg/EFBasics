@@ -19,8 +19,8 @@ namespace Uned.EFBasics.UI
 
             GuitarManager manager = new GuitarManager();
             manager.AddGuitar(guitar);
-            manager.UpdateGuitarNameAndHistory(guitar.GuitarId, guitar);
-            var list = manager.GetGuitarByCreatedBefore(new DateTime(2021, 7, 18, 23, 10, 53));
+            manager.UpdateGuitarNameAndHistory(guitar.GuitarId, guitar);           
+            var list = manager.GetGuitarsCreatedBefore(new DateTime(2021, 7, 18, 23, 10, 53));
             Console.WriteLine(list.Count);
         }
     }
